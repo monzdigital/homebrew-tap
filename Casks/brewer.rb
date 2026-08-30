@@ -17,8 +17,9 @@ cask "brewer" do
   app "Brewer.app"
 
   caveats <<~EOS
-    This build is not yet notarized. If macOS blocks the first launch,
-    right-click Brewer.app -> Open, or reinstall with:
+    This build is not yet notarized, so macOS blocks the first launch:
+    System Settings -> Privacy & Security -> scroll down -> "Open Anyway".
+    Skip that prompt entirely by installing with:
       brew reinstall --cask --no-quarantine monzdigital/tap/brewer
   EOS
 
