@@ -1,6 +1,6 @@
 cask "brewer" do
-  version "1.0.3"
-  sha256 "06356342e9062d14d70ea1be0fda6eda033eff3575ad435e9c629ef81fbafe5d"
+  version "1.1.0"
+  sha256 "93c09e4bde49c6cd6fb688940912ddd09913e1c3b84ea64ce2b98989eaa43e3d"
 
   url "https://github.com/monzdigital/brewer/releases/download/v#{version}/Brewer-#{version}.zip"
   name "Brewer"
