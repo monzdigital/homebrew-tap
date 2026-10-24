@@ -1,6 +1,6 @@
 cask "brewer" do
-  version "1.1.0"
-  sha256 "93c09e4bde49c6cd6fb688940912ddd09913e1c3b84ea64ce2b98989eaa43e3d"
+  version "1.2.0"
+  sha256 "37a05d3d9da68fa370deeed97fb9e6a686e126aa5ec1cbf20f368f2320bf8b31"
 
   url "https://github.com/monzdigital/brewer/releases/download/v#{version}/Brewer-#{version}.zip"
   name "Brewer"
@@ -17,10 +17,11 @@ cask "brewer" do
   app "Brewer.app"
 
   caveats <<~EOS
-    This build is not yet notarized, so macOS blocks the first launch:
-    System Settings -> Privacy & Security -> scroll down -> "Open Anyway".
-    Skip that prompt entirely by installing with:
-      brew reinstall --cask --no-quarantine monzdigital/tap/brewer
+    Brewer is not notarized yet, so macOS blocks its first launch and the
+    first launch after each upgrade. Approve it once in:
+      System Settings -> Privacy & Security -> scroll down -> "Open Anyway"
+    or clear the quarantine flag from the terminal:
+      xattr -dr com.apple.quarantine /Applications/Brewer.app
   EOS
 
   zap trash: [
