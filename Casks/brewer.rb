@@ -1,6 +1,6 @@
 cask "brewer" do
-  version "1.2.0"
-  sha256 "37a05d3d9da68fa370deeed97fb9e6a686e126aa5ec1cbf20f368f2320bf8b31"
+  version "1.3.0"
+  sha256 "57038836ceb39640604597ba9f1df2668edbfe07d5b324354841fc4fb39171e0"
 
   url "https://github.com/monzdigital/brewer/releases/download/v#{version}/Brewer-#{version}.zip"
   name "Brewer"
@@ -30,3 +30,4 @@ cask "brewer" do
     "~/Library/Saved Application State/com.monz.brewer.savedState",
   ]
 end
+
